@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+
+
+<html>
+
+<head>
+
+    <title>Untitled</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" />
+
+    <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script data-require="MomentJS@2.10.0" data-semver="2.10.0" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+    body {
+        padding: 10%;
+        font-family: sans-serif;
+    }
+
+    button {
+        padding: 1em;
+        border: 0;
+        margin: 0.25em;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .f-red {
+        background: #ff4136;
+    }
+    .f-red:hover {
+        background: #e90d00;
+    }
+
+    .f-green {
+        background: #2ecc40;
+    }
+    .f-green:hover {
+        background: #208e2c;
+    }
+
+    .f-blue {
+        background: #0074d9;
+    }
+    .f-blue:hover {
+        background: #004b8c;
+    }
+
+    .f-all {
+        background: #333;
+    }
+    .f-all:hover {
+        background: #0d0d0d;
+    }
+
+    .red, .green, .blue {
+        color: #fff;
+        padding: 1em;
+        margin-bottom: 0.25em;
+    }
+
+    .red {
+        background: #ff4136;
+    }
+
+    .green {
+        background: #2ecc40;
+    }
+
+    .blue {
+        background: #0074d9;
+    }
+</style>
+</head>
+
+
+
+<body>
+<div class="test-div">TEST DIV</div>
+<h2>Фильтрация элементов с помощью jQuery</h2>
+<p>
+    <button class="f-suzuki">Фильтр красных элементов</button>
+    <button class="f-mazda">Фильтр синих элементов</button>
+    <button class="f-opel">Фильтр зеленых элементов</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="f-all">Все элементы</button>
+</p>
+<div class="sort suzuki" >Первый</div>
+<div class="sort suzuki" >Второй</div>
+<div class="sort mazda" >Третий</div>
+<div class="sort opel" >Четвертый</div>
+<div class="sort suzuki" >Пятый</div>
+<div class="sort mazda" >Шестой</div>
+<div class="sort mazda" >Седьмой</div>
+<div class="sort opel" >Восьмой</div>
+
+        <script language="javascript">
+           $(".f-suzuki").click(function () {
+               $(".sort").hide();
+               $(".suzuki").show();
+           });
+
+               $(".f-mazda").click(function () {
+                   $(".sort").hide();
+                   $(".mazda").show();
+               });
+           $(".f-opel").click(function () {
+               $(".sort").hide();
+               $(".opel").show();
+           });
+
+           alert("hello");
+
+
+
+           /*    $(document).ready(function() {
+
+
+
+                   $('#end').change(function() {
+                       var start = $('#start').datepicker('getDate');
+                       var end   = $('#end').datepicker('getDate');
+
+                       if (start<end) {
+                           var days   = (end - start)/1000/60/60/24;
+                           $('#days').val(days);
+                       }
+                       else {
+                           alert ("You cant come back before you have been!");
+                           $('#start').val("");
+                           $('#end').val("");
+                           $('#days').val("");
+                       }
+                   }); //end change function
+               }); //end ready*/
+        </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="js/index.js"></script>
+</body>
+
+</html>

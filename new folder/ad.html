@@ -1,0 +1,343 @@
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('[name="MyDate1"]').datepicker({
+                dateFormat: "dd-mm-yy",
+                minDate: 0,
+                monthNames: [ "Январь", "Февраль", "Mарт", "Апрель", "Май", "Июнь", "Июлб", "Август", "сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+                dayNames: [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" ],
+                dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
+                onSelect: function () {
+                    var dt2 = $('[name="MyDate2"]');
+                    var startDate = $(this).datepicker('getDate');
+                    startDate.setDate(startDate.getDate() + 30);
+                    var minDate = $(this).datepicker('getDate');
+                    dt2.datepicker('setDate', minDate);
+                    dt2.datepicker('option', 'maxDate', startDate);
+                    dt2.datepicker('option', 'minDate', minDate);
+                    $(this).datepicker('option', 'minDate', minDate);
+                }
+            });
+            $('[name="MyDate2"]').datepicker({
+                dateFormat: "dd-mm-yy",
+                monthNames: [ "Январь", "Февраль", "Mарт", "Апрель", "Май", "Июнь", "Июлб", "Август", "сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+                dayNames: [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" ],
+                dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="text" name="MyDate1" class="datepicker">
+<input type="text" name="MyDate2" class="datepicker">
+
+</body>
+</html>
+-->
+
+<!doctype html>
+<html>
+<head>
+    <title>jQuery Datepicker UI Example - Demo Preview</title>
+    <meta name="robots" content="noindex, nofollow"/>
+    <!------------ Including jQuery Date UI with CSS -------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <!-- jQuery Code executes on Date Format option ----->
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Below line is used for online Google font */
+        @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+        select{
+            width::80%;
+            border:3px solid rgb(200, 200, 207);
+            height:42px;
+            padding:5px;
+            border-radius:3px;
+            margin:5px 10px 20px 35px;
+        }
+        input[type=text]{
+            width:76%;
+            border:3px solid rgb(200, 200, 207);
+            height:23px;
+            padding:5px;
+            border-radius:3px;
+            margin:5px 10px 20px 35px;
+        }
+        input[type=submit]{
+            width:80%;
+            border:3px solid rgb(200, 200, 207);
+            height:42px;
+            padding:5px;
+            border-radius:3px;
+            margin:10px 10px 20px 35px;
+            border:1px solid green;
+        }
+        label{
+            margin-left:35px;
+            font-family: 'Droid Serif', serif;
+        }
+        .container{
+            width:960px;
+            margin:50px auto;
+        }
+        .main{
+            float:left;
+            width:355px;
+            height:350px;
+            box-shadow:1px 1px 12px gray;
+            padding-top:30px;
+        }
+        h2{
+            width:370px;
+            text-align:center;
+            font-family: 'Droid Serif', serif;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="container-fluid calendar">
+        <div class='col-lg-6 col-xs-6' style="padding-left: 0px;">
+
+            <input type="text" name="MyDate1" class="datepicker">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+
+        </div>
+        <div class='col-lg-6 col-xs-6' style="padding-left: 0px;">
+
+            <input type="text" name="MyDate2" class="datepicker">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+    </div>
+<script>
+    $(document).ready(function () {
+        $('[name="MyDate1"]').datepicker({
+            dateFormat: "dd-mm-yy",
+            minDate: 0,
+            monthNames: [ "Январь", "Февраль", "Mарт", "Апрель", "Май", "Июнь", "Июлб", "Август", "сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+            dayNames: [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" ],
+            dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
+            onSelect: function () {
+                var dt2 = $('[name="MyDate2"]');
+                var startDate = $(this).datepicker('getDate');
+                startDate.setDate(startDate.getDate() + 30);
+                var minDate = $(this).datepicker('getDate');
+                dt2.datepicker('setDate', minDate);
+                dt2.datepicker('option', 'maxDate', startDate);
+                dt2.datepicker('option', 'minDate', minDate);
+                $(this).datepicker('option', 'minDate', minDate);
+            }
+        });
+        $('[name="MyDate2"]').datepicker({
+            dateFormat: "dd-mm-yy",
+            monthNames: [ "Январь", "Февраль", "Mарт", "Апрель", "Май", "Июнь", "Июлб", "Август", "сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+            dayNames: [ "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" ],
+            dayNamesMin: [ "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" ],
+        });
+    });
+</script>
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bootsrap </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    &lt;!&ndash;    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" />&ndash;&gt;
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    &lt;!&ndash;   <script data-require="MomentJS@2.10.0" data-semver="2.10.0" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>&ndash;&gt;
+
+    &lt;!&ndash; <script src="//code.jquery.com/jquery-1.10.2.js"></script>&ndash;&gt;
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+<div class="row centered car-block sort kia business">
+    <div class="col-lg-3 car-col" >
+        <img src="img/new.png" alt="" class="new_car" >
+        <img class="featurette-image img-responsive "  alt="" src="img/kia_rio_2017.png">
+
+    </div>
+    <div class="col-lg-4 car-col" >
+        <a href="#"><b>KIA Rio 2017г.</b></a>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>1-2 дня</th>
+                <th>3-6 дней</th>
+                <th>7-14 дней</th>
+                <th>15-30 дней</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>р</td>
+                <td>р</td>
+                <td>р</td>
+                <td>р</td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-lg-3 car-col price hidden-xs">
+        <b>Итого:</b> <span class="result" >20</span> руб.
+        <p>Кол-во выбранных суток:</p>
+        <p>Стоимость залога: 20 руб.</p>
+        <p>Стоимость перепробега: 12 руб./1км</p>
+        <div class="container-fluid">
+            <div class="row">
+                <table class="table number">
+                    <tr><th>1</th>
+                        <th>4</th>
+                        <th>6</th></tr>
+                </table>
+                <div class="col-md-4 ">
+                    <div class="thumbnail">
+                        <img src="img/person.png" alt="person" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/door.png" alt="car" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail ">
+                        <img src="img/car.png" alt="door" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-2 car-col" >
+        <button type="button" class="btn btn_data" data-toggle="collapse" href="#collapse2">Подробнее</button>
+
+        <button class="btn btn_order" type="button" data-toggle="modal" data-target="#myModal2">Заказать</button>
+    </div>
+</div>
+
+<div class="panel sort kia business">
+    <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="col-lg-3  hidden-xs">
+                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner carousel2">
+                        <div class="item active">
+                            <img class="img-responsive" src="img/kia_rio_2017_2.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img  class="img-responsive" src="img/kia_rio_2017_1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img  class="img-responsive" src="img/kia_rio_2017_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 dop-service">
+                <div class="container-fluid calendar">
+                    <div class='col-lg-6 col-xs-6' style="padding-left: 0px;">
+
+                        <input type="text" name="MyDate1" class="datepicker">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+
+                    </div>
+                    <div class='col-lg-6 col-xs-6' style="padding-left: 0px;">
+
+                        <input type="text" name="MyDate2" class="datepicker">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label><input id="b3" onclick="myFunc ()" type="checkbox"  value="" />Видеорегистратор 200 руб./в сутки
+                        <span hidden id="s3">200</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label><input class="b1" onclick="myFunc ()" type="checkbox" value="" />Детсоке автокресло 200 руб./в сутки
+                        <span hidden id="s1">200</span>
+                    </label>
+                </div>
+                <div class="checkbox ">
+                    <label><input id="b2" onclick="myFunc ()" type="checkbox"  value="" />Навигатор 200 руб./в сутки
+                        <span hidden id="s2">200</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <p>
+                    Продуманность и внимание к деталям выделяют Новый Rio 2017 на дороге. Куда бы Вы ни отправились, готовьтесь замечать внимание окружающих к Вам и Вашему автомобилю.Ультрасовременный и уютный салон Нового Rio 2017 – это сочетание привлекательного дизайна и тщательно подобранных материалов. Набор опций приятно удивит Вас.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row centered car-block sort kia business">
+        <div class="col-lg-3 car-col" >
+            <img class="featurette-image img-responsive "  alt="" src="img/kia_rio_2017_white.png">
+
+        </div>
+        <div class="col-lg-4 car-col" >
+            <a href="#"><b>KIA Rio 2017г.</b></a>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>1-2 дня</th>
+                    <th>3-6 дней</th>
+                    <th>7-14 дней</th>
+                    <th>15-30 дней</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>р</td>
+                    <td>р</td>
+                    <td>р</td>
+                    <td>р</td>
+
+                </tr>
+-->
