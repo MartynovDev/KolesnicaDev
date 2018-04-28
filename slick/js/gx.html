@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var mas = [6, 2, 10, 4, 7, 1, 3, 8, 9, 5];
+    for (var i = 0; i < mas.length-1; i++) {
+        for (var j = i + 1; j < mas.length; j++) {
+
+            if (mas[j] < mas[i]) {
+                var min = mas[i];
+                max = mas[j];
+                mas[i] = max;
+                mas[j] = min;
+            }
+        }
+    }
+    console.log(mas);
+
+</script>
+</body>
+</html>
