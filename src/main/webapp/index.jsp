@@ -1,17 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+       
     <meta charset="UTF-8">
-    <title>AvtoProkat </title>
+    <title>AvtoProkat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-    <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">-->
-    <!-- Latest compiled and minified CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
@@ -55,63 +54,10 @@
 </head>
 
 <body>
-<!--<div class="container-fluid" id="header" >
-<div class="container" id="header" >
-    <div class="row centered ">
-        &lt;!&ndash;<div class="logo">&ndash;&gt;
-        <div class="col-lg-3 col-xs-4 col-lg-offset-1 logo">
-           &lt;!&ndash; <img src="img/7.jpg" alt="">&ndash;&gt;
-            <p>LOGO</p>
-        </div>
-       &lt;!&ndash; <div class="col-lg-1 col-xs-2" >
-            <p>Аренда Авто</p>
-        </div>&ndash;&gt;
-        <div class="col-lg-3 col-xs-6  phone">
-            <p><span class="glyphicon glyphicon-phone"></span><a href="tel:+375(29)361-10-35">+375(29)361-10-35</a></p>
-            <p><span class="glyphicon glyphicon-phone"></span><a href="tel:+375(29)682-48-25">+375(29)682-48-25</a></p>
-        </div>
-        <div class="col-lg-3 hidden-xs">
-            <p><span class="glyphicon glyphicon-time"></span> с 8:00 до 22:00</p>
-            <p><span class="glyphicon glyphicon-calendar"></span>без выходных</p>
-        </div>
-        <div class="col-lg-3 hidden-xs">
-            <h4>мы в социальных сетях</h4>
-            <a href="https://vk.com/kolesnica_by"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/kolesnica.by/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/KolesnicaBy"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        </div>
-    </div>
-</div>-->
-<div class="container header">
-    <div class="row">
-        <div class="col-lg-2">
-            <p>LOGO</p>
-         </div>
-        <div class="col-lg-3 ">
-           <i class="fa fa-map-marker centered" aria-hidden="true"></i>
-            <div>
-                <p>ул. Мазурова, 27</p>
-                <p>ул. Березовая роща, 108</p>
 
-                <a> Карта</a>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <p><span class="glyphicon glyphicon-time"></span> с 8:00 до 22:00</p>
-            <p><span class="glyphicon glyphicon-calendar"></span>без выходных</p>
-        </div>
-        <div class="col-lg-3">
+<%@ include file="header.jsp" %>
 
-        </div>
-        <div class="col-lg-1">
-
-        </div>
-
-    </div>
-
-</div>
-
-
+<a href="Kia_Rio_2017.jsp">SSSSSSSS</a>
 
 
 
@@ -124,7 +70,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Аренда Авто</a>
+            <a class="navbar-brand" href="#"><lang:locale name="adress_first"/></a>
         </div>
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -2977,7 +2923,7 @@
                         <img class="featurette-image img-responsive "  alt="" src="img/Volkswagen_Polo_2013.png">
                     </div>
                     <div class="col-lg-4 car-col" >
-                        <a href="#"><b>Volkswagen Polo 2013г.</b></a>
+                        <a href="Kia_Rio_2017.jsp"><b>Volkswagen Polo 2013г.</b></a>
                         <table class="table">
                             <thead>
                             <tr>
@@ -3258,7 +3204,7 @@
                 <div class="row centered car-block sort kia business">
                     <div class="col-lg-3 car-col" >
                         <img src="img/new.png" alt="" class="new_car" >
-                        <img class="featurette-image img-responsive "  alt="" src="img/kia_rio_2017.png">
+                        <img class="featurette-image img-responsive "  alt="" src="img/kia_rio_2017.png" href="Kia_Rio_2017.jsp">
 
                     </div>
                     <div class="col-lg-4 car-col" >
@@ -3613,28 +3559,7 @@
 
 <footer>
 
-    <div class="container-fluid footer"  >
-        <div class="row centered">
-            <div class="col-lg-3 col-sm-6 col-xs-6">
-                LOGO
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-6 phone">
-                <p><span class="glyphicon glyphicon-phone"></span><a href="tel:+375(29)361-10-35">+375(29)361-10-35</a></p>
-
-                <p><span class="glyphicon glyphicon-phone"></span> <a href="tel:+375(29)682-48-25">+375(29)682-48-25</a></p>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-6 hidden-xs">
-                <p><span class="glyphicon glyphicon-time"></span> с 8:00 до 22:00</p>
-                <p><span class="glyphicon glyphicon-calendar"></span>без выходных</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-6 hidden-xs">
-                <h4>мы в социальных сетях</h4>
-                <a href="https://vk.com/kolesnica_by"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/kolesnica.by/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/KolesnicaBy"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>
+    <%@ include file="footer.jsp" %>
 
 </footer>
 
