@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+body{
+font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color:#464547;
+}
+
+.header,.footer{
+background:#464547;
+}
+
+.info{
+        padding-top: 25px;
+    color:white;
+    line-height: 14px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+}
+
+.header-address{
+    position: relative;
+    padding-left: 11px;
+}
+
+i.fa.fa-map-marker, i.fa.fa-mobile{
+    color: #00b5d1;
+    width: 40px;
+    position: absolute;
+    padding-left: 7px;
+    top: 0;
+    left: 0;
+    font-size: 34px;
+    border-radius: 100%;
+    border: 3px solid #00b5d1;
+}
+
+i.fa.fa-mobile{
+    padding-left: 10px;
+}
+
+.address, .phone, .workinghours{
+    position: relative;
+    padding-left: 42px;
+}
+
+
+
+.address p,.phone p, .workinghours p {
+   color: #fff;
+   margin-bottom: 0px;
+   font-size: 12px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.address .btn,.phone a{
+font-weight: 700;
+      color: #00b5d1;
+      text-transform: uppercase;
+      text-decoration: underline;
+      margin-right: 2px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: inline-block;
+      width: auto;
+      margin-bottom: 1px;
+}
+.address .btn{
+        padding-left: 0px;
+        padding-top: 0px;
+}
+.phone a, .workinghours span{
+    color: #fff;
+    text-decoration:none;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.workinghours P{
+    color: #00b5d1;
+    font-weight: 700;
+}
+
+.address p{
+    line-height: 13px;
+}
+.logo p{
+        margin-bottom: 5px;
+        font-size: 18px;
+        color:#fff;
+}
+.logo{
+    margin-top: -20px;
+    text-align: center;
+}
+.header i.fa.fa-clock-o {
+      color: #00b5d1;
+      font-size: 43px;
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+.nav-item{
+    padding:0 20px;
+}
+.nav-link{
+    color:#464547 !important;
+    font-weight: 700;
+}
+.header a:hover, .navbar a:hover{
+    color:#00b5d1 !important;
+}
+.navbar-nav .active {
+    color:#00b5d1 !important;
+    border-bottom:3px solid #00b5d1;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background:none;
+    color: #464547;
+    font-size: 34px;
+    font-weight: 700;
+}
+.main{
+    background: url(../img/background.png)  no-repeat;;
+    height: 330px;
+    background-position:center;
+    background-size: cover;
+
+}
+.carousel {
+    height: 330px !important;
+    width:100%;
+}
+
+.main-left{
+    padding-left: 60px;
+}
+.main h1{
+    font-weight: 500;
+}
+.main .container span{
+   font-size: 80px;
+   font-weight: 500;
+   color:#00b5d1;
+}
+
+.main_button a,.read-more{
+    padding: 6px 10px;
+    font-weight: 500;
+    background:#cfe200;
+    text-transform:uppercase;
+    opacity:0.8;
+    border:none;
+    color:#fff;
+}
+.main_button a:hover,.read-more:hover {
+      background:#cfe200;
+      opacity:1;
+}
+.internationalization .form-control{
+    background:none;
+    border:none;
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+    padding:0;
+    width: 68px;
+}
+.internationalization{
+    text-align:center;
+    vertical-align: middle;
+}
+
+.jsCur {
+
+    border: none;
+    background: none;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.internationalization form button {
+    border:none;
+    padding:0;
+    background:none;
+    margin-bottom: 3px;
+}
+.internationalization img{
+    height: 17px;
+    width:38px;
+}
+.cars img{
+    width:30%;
+}
+.cars a,.car-col a{
+     color:#464547;
+     font-weight: 700;
+     text-decoration:none;
+}
+.cars a:hover,.car-col a:hover{
+    color:#00b5d1 !important;
+}
+.cars p{
+    margin-bottom: 5px;
+}
+.cars{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.car-col table{
+    font-size:11px;
+    margin-bottom: 0px;
+}
+.car-col tbody{
+    font-weight:500;
+}
+
+.car-description thead th{
+    border-top: none;
+    border-bottom:3px solid #00b5d1;
+}
+.car-col{margin-bottom: 30px;
+    text-align: center;
+    margin-top: 16px;
+}
+.select p{
+    margin-bottom: 0px;
+}
+.select{
+    height: 50px;
+}
+.car-img{
+}
+.car-description{
+    padding-left: 0px;
+}
+.but{
+    text-align: right;
+}
+.footer h5 {
+  color: #cfe200;
+   margin-bottom: 0px;
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+   font-weight:600;
+}
+.footer p, .footer a {
+    color: #fff;
+    text-decoration:none;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+}
+.footer{
+    padding-top: 15px;
+}
+.footer-phone a:hover,.footer-network i:hover {
+    color: #cfe200;
+}
+.network{
+    text-align:center;
+}
+.footer-network{
+    color:#fff;
+}
+.main-airport img{
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+}
+.table-price thead{
+    background:#cfe200;
+    color:#fff;
+}
+.main-price h1,.main-usloviya h1,.main-contacts h1{
+    text-align:center;
+    font-weight: 500;
+}
+.address img, .footer-address img, .main-contacts img{
+    width:15px;
+}
+.partner img{
+    width:25%;
+}
+.car-col .modal-header {
+    background:#464547;
+    color:#fff;
+}
+.modal-body{
+    text-align:left;
+}
+.form-control{
+    margin:.375rem 0;
+    border: 1px solid #00b5d1;
+}
+label{
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.close {
+    color: #fff !important;
+    opacity: 1;
+}
+.send,.order{
+    padding: 6px 10px;
+    font-weight: 500;
+    background:#00b5d1;
+    text-transform:uppercase;
+    opacity:0.8;
+    border:none;
+    color:#fff;
+}
+.send:hover{
+      background:#00b5d1;
+      opacity:1;
+}
+.table-sm td, .table-sm th {
+    padding: .3rem 0;
+    }
+.order{
+     background:#464547;
+ }
+.order:hover{
+      opacity:1;
+}
+.logo img{
+    width: 92px;
+}
+.car-col-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.map {
+ 	width: 100%;
+ 	height: 400px;
+ }
+#modal-map .close{
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 8040;
+}
+#modal-map i{
+    color: black;
+    background: white;
+    border-radius: 100%;
+    width: 24px;
+}
+.table-bordered,.main-usloviya td{
+    border: 1px solid #00b5d1;
+}
+.main-usloviya span{
+    font-weight: 700;
+}
+.main-contacts p img{
+    width:9%;
+    margin-top: -7px;
+    margin-left: 7px;
+}
+.main-contacts i.fa.fa-clock-o{
+    color:#00b5d1;
+}
+.main-contacts h5,.main-contacts p{
+  font-size: 1.0rem;
+  margin-bottom: 4px;
+}
+.main-contacts{
+    font-weight:400;
+}
+.select img {
+    width:30px;
+ }
+.card{
+    border:none;
+}
+.b{
+    font-weight:500;
+}
+.options li{
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 8px;
+    float: left;
+    width: 50%;
+
+}
+.options ul{
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+.options i {
+    color:#00b5d1;
+}
+.table-car th,.table-car td {
+    padding: .35rem;
+}
+.characteristic i.fa.fa-calendar{
+    color: black;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.characteristic img{
+    width:30px;
+    margin-right: 10px;
+}
+.characteristic p{
+    font-weight:500;
+}
+.table-period td{
+    border:none;
+}
+.table-cost{
+    border-top: 3px solid #00b5d1;
+}
+.car-gallery {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.locale {
+    padding-top: 0px;
+    padding-right: 0px;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    padding-bottom: 0px;
+}
+
+.cars-row {
+    margin-bottom: 20px;
+}
+
+.viber-whatsapp {
+    width: 35px;
+    margin-top: -13px;
+    margin-left: 0px;
+}
+
+.cards {
+	text-align: center;
+}
+
+.car-info {
+	display: table-cell;
+	vertical-align: middle;
+}
